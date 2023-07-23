@@ -3,7 +3,7 @@ import "./App.css";
 import { Button } from "./components/ui/Button/Button";
 import { CatGifContainer } from "./components/CatGifContainer/CatGifContainer";
 import { GIPHI_API_KEY } from "./utils/GIPHY_API_KEY";
-import { GetCatFact } from "./services/GetCatFact";
+import { getCatFact } from "./services/getCatFact";
 
 const App = () => {
   const [catFact, setCatFact] = useState("");
@@ -34,7 +34,7 @@ const App = () => {
   }, [catFact]);
 
   const handleClick = async () => {
-    const fact = await GetCatFact();
+    const fact = await getCatFact();
     setCatFact(fact);
   };
 

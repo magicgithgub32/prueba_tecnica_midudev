@@ -1,4 +1,4 @@
-export const GetCatFact = async () => {
+export const getCatFact = async () => {
   const result = await fetch("https://catfact.ninja/fact");
   const res = await result.json();
 
