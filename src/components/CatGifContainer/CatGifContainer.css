@@ -1,0 +1,19 @@
+.catGifContainer {
+    display: flex;
+    gap: 20px; 
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .catGifContainer > img {
+    width: 300px; 
+    padding: 10px;
+    border-radius:20px;
+    margin: 30px;
+  }
+  
+  .factText {
+    font-size: 20px;
+    font-weight: 600;
+  }
