@@ -11,7 +11,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchCatFact = async () => {
-      const fact = await GetCatFact();
+      const fact = await getCatFact();
       setCatFact(fact);
     };
     fetchCatFact();
